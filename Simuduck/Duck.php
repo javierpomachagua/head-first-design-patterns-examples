@@ -12,5 +12,10 @@ abstract class Duck
         echo 'swim';
     }
 
+    public function fly()
+    {
+        echo 'fly';
+    }
+
     abstract public function display();
 }
