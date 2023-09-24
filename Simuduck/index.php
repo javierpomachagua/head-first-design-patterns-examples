@@ -4,9 +4,14 @@ require_once 'MallardDuck.php';
 require_once 'RedHeadDuck.php';
 require_once 'RubberDuck.php';
 require_once 'DecoyDuck.php';
+require_once 'FlyNoWay.php';
+require_once 'ModelDuck.php';
+require_once 'FlyRocketPowered.php';
 
-//$mallarDuck = new MallardDuck();
-//$mallarDuck->display();
+//$mallarDuck = new MallardDuck(new FlyWithWings(), new Quack());
+//$mallarDuck->performFly();
+//echo "\n";
+//$mallarDuck->performQuack();
 //
 //echo "\n";
 //
@@ -16,5 +21,11 @@ require_once 'DecoyDuck.php';
 //$rubberDuck = new RubberDuck();
 //$rubberDuck->quack();
 
-$decoyDuck = new DecoyDuck();
-$decoyDuck->quack();
+//$decoyDuck = new DecoyDuck();
+//$decoyDuck->quack();
+
+$modelDuck = new ModelDuck();
+$modelDuck->performFly();
+echo "\n";
+$modelDuck->setFlyBehavior(new FlyRocketPowered());
+$modelDuck->performFly();
