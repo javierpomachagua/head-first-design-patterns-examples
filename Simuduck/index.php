@@ -7,6 +7,7 @@ require_once 'DecoyDuck.php';
 require_once 'FlyNoWay.php';
 require_once 'ModelDuck.php';
 require_once 'FlyRocketPowered.php';
+require_once 'DuckCall.php';
 
 //$mallarDuck = new MallardDuck(new FlyWithWings(), new Quack());
 //$mallarDuck->performFly();
@@ -24,8 +25,12 @@ require_once 'FlyRocketPowered.php';
 //$decoyDuck = new DecoyDuck();
 //$decoyDuck->quack();
 
-$modelDuck = new ModelDuck();
-$modelDuck->performFly();
-echo "\n";
-$modelDuck->setFlyBehavior(new FlyRocketPowered());
-$modelDuck->performFly();
+//$modelDuck = new ModelDuck();
+//$modelDuck->performFly();
+//echo "\n";
+//$modelDuck->setFlyBehavior(new FlyRocketPowered());
+//$modelDuck->performFly();
+
+$duckCall = new DuckCall();
+$duckCall->setQuackBehavior(new Quack());
+$duckCall->performQuack();
