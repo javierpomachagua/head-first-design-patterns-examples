@@ -8,6 +8,6 @@ class SwordBehavior implements WeaponBehavior
 {
     public function useWeapon()
     {
-        echo 'useing a sword';
+        echo 'using a sword';
     }
 }

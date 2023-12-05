@@ -31,6 +31,6 @@ require_once 'DuckCall.php';
 //$modelDuck->setFlyBehavior(new FlyRocketPowered());
 //$modelDuck->performFly();
 
-$duckCall = new DuckCall();
-$duckCall->setQuackBehavior(new Quack());
-$duckCall->performQuack();
+//$duckCall = new DuckCall();
+//$duckCall->setQuackBehavior(new Quack());
+//$duckCall->performQuack();
